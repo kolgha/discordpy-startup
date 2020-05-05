@@ -61,7 +61,3 @@ async def on_message(message):
                 #==============================================================
         else:
             await client.edit_message(msg, '募集終了\n'+ '\n'.join(frelist))
-
-
-
-client.run("NzA3MzE2MDg5MDcxMzM3NjEz.XrHBmw.R5a_gNITmgeVA5Aw_oIPJocc4tk")
