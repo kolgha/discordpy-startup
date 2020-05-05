@@ -1,5 +1,4 @@
 import discord
-from discord.ext import commands
 
 import os
 
@@ -66,7 +65,6 @@ async def on_message(message):
                 #==============================================================
         else:
             await client.edit_message(msg, '募集終了\n'+ '\n'.join(frelist))
-
 
 
 client.run(token)
