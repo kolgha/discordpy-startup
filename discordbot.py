@@ -2,6 +2,8 @@ import discord
 
 client = discord.Client()
 
+token = os.environ['DISCORD_BOT_TOKEN']
+
 @client.event
 async def on_message(message):
     """メンバー募集 (.rect@数字)"""
