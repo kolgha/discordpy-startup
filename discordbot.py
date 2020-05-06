@@ -16,7 +16,7 @@ async def on_ready():
     print('------')
 
 @client.command()
-async def rect(ctx, about = "募集", cnt = 4, settime = 1800.0):
+async def rect(ctx, about = "募集", cnt = 8, settime = 1800.0):
     cnt, settime = int(cnt), float(settime)
     reaction_member = [">>>"]
     test = discord.Embed(title=about,colour=0x1e90ff)
