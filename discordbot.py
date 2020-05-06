@@ -66,5 +66,13 @@ async def on_message(message):
         else:
             await client.edit_message(msg, '募集終了\n'+ '\n'.join(frelist))
 
+@client.event
+async def on_message(message):
+
+        # Bot起動確認
+        if message.content.startswith("bot"):
+            reply = time + " | " + client.user.name + "は起動中です。"
+            await client.send_message(message.channel, reply)
+            
 
 client.run(token)
